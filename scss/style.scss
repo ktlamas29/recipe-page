@@ -1,0 +1,217 @@
+
+@use "./variables";
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    // background: rebeccapurple;
+    background: variables.$Eggshell;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        // background: tomato;
+        background: variables.$White;
+        width: 48%;
+        margin: 40px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+
+        box-shadow: 4px 4px 5px variables.$Dark-Charcoal;
+
+            @media (max-width: 375px) {
+                width: 100%;
+                margin: 0px;
+                // background: brown;
+            }
+
+            @media (max-width: 768px) {
+                width: 80%;
+                // background: violet;
+                margin: 0px;
+            }
+
+        .img-card {
+        // background: violet;
+        height: 270px;
+        padding: 10px 25px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+            }
+        }
+
+        h2 {
+            color: variables.$Nutmeg;
+            font-family: "Outfit", sans-serif;  
+        }
+
+        p {
+            color: variables.$Wenge-Brown;
+            font-family: "Young Serif", serif;
+        }
+
+        hr {
+            margin: 25px 0px;
+            color: variables.$Wenge-Brown;
+        }
+
+        .content {
+            // background: yellowgreen;
+            padding: 0px 30px;
+            margin-top: 5px;
+
+            .title {
+                // background: purple;
+
+                h1 {
+                    color: variables.$Dark-Charcoal;
+                    font-family: "Young Serif", serif;
+
+                }
+            }
+
+            .description {
+                // background: orangered;
+                padding: 15px;
+                margin: 20px 0px;
+
+                p {
+                    color: variables.$Wenge-Brown;
+                    font-family: "Young Serif", serif;
+                }
+            } 
+
+            .time-preparation {
+                // background: red;
+                background: variables.$Light-Grey;
+                padding: 8px 15px;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                margin-bottom: 8px; 
+
+                h3 {
+                    color: variables.$Dark-Raspberry;
+                    font-family: "Outfit", sans-serif;
+                }
+
+                ul {
+                    margin-left: 25px;
+
+                    li {
+                        list-style: none;
+
+                        &::before {
+                        content: "•";
+                        color: #854632;
+                        padding-right: 16px;
+                        padding-left: 8px;
+                        font-size: 24px;
+                        }
+                    }
+                }
+            }
+
+            .Ingredients {
+                // background: royalblue;
+
+                ul {
+                margin-left: 25px;
+
+                li {
+                    list-style: none;
+
+                    &::before {
+                    content: "•";
+                    color: #854632;
+                    padding-right: 16px;
+                    padding-left: 8px;
+                    font-size: 24px;
+                    }
+                }
+                }
+            }
+
+            .Instructions {
+                // background: sienna;
+                margin-bottom: 10px;
+
+                h2 {
+                    margin-bottom: 10px;
+                }
+
+                ol{
+                    margin-left: 25px;
+
+                    li {
+                        list-style: none;
+
+                        padding-bottom: 8px;
+                        color: #5f564d;
+                        // font-family: Outfit;
+                        counter-increment: step-counter;
+                        text-align: left;
+
+                        &::before {
+                            content: counter(step-counter) ".";
+                            color: #854632;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+
+            .Nutrition {
+                // background: green;
+                margin-bottom: 35px;
+
+                p {
+                    margin: 15px 0px;
+                    font-family: "Young Serif", serif;
+                }
+
+                table {
+                    // background: red;
+                    width: 100%;
+                    
+                    tr {
+                        margin-bottom: 10px;
+                        
+                        td {
+                            // color: blue;
+                            border-bottom: 0.0625rem solid variables.$Light-Grey;
+                            padding: 10px 0px;
+                            
+                            strong {
+                                color: variables.$Dark-Raspberry;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

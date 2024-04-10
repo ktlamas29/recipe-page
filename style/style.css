@@ -1,0 +1,162 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(30, 54%, 90%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container {
+  background: hsl(0, 0%, 100%);
+  width: 48%;
+  margin: 40px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 4px 4px 5px hsl(24, 5%, 18%);
+}
+@media (max-width: 375px) {
+  body .container {
+    width: 100%;
+    margin: 0px;
+  }
+}
+@media (max-width: 768px) {
+  body .container {
+    width: 80%;
+    margin: 0px;
+  }
+}
+body .container .img-card {
+  height: 270px;
+  padding: 10px 25px;
+}
+body .container .img-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+body .container h2 {
+  color: hsl(14, 45%, 36%);
+  font-family: "Outfit", sans-serif;
+}
+body .container p {
+  color: hsl(30, 10%, 34%);
+  font-family: "Young Serif", serif;
+}
+body .container hr {
+  margin: 25px 0px;
+  color: hsl(30, 10%, 34%);
+}
+body .container .content {
+  padding: 0px 30px;
+  margin-top: 5px;
+}
+body .container .content .title h1 {
+  color: hsl(24, 5%, 18%);
+  font-family: "Young Serif", serif;
+}
+body .container .content .description {
+  padding: 15px;
+  margin: 20px 0px;
+}
+body .container .content .description p {
+  color: hsl(30, 10%, 34%);
+  font-family: "Young Serif", serif;
+}
+body .container .content .time-preparation {
+  background: hsl(30, 18%, 87%);
+  padding: 8px 15px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-bottom: 8px;
+}
+body .container .content .time-preparation h3 {
+  color: hsl(332, 51%, 32%);
+  font-family: "Outfit", sans-serif;
+}
+body .container .content .time-preparation ul {
+  margin-left: 25px;
+}
+body .container .content .time-preparation ul li {
+  list-style: none;
+}
+body .container .content .time-preparation ul li::before {
+  content: "•";
+  color: #854632;
+  padding-right: 16px;
+  padding-left: 8px;
+  font-size: 24px;
+}
+body .container .content .Ingredients ul {
+  margin-left: 25px;
+}
+body .container .content .Ingredients ul li {
+  list-style: none;
+}
+body .container .content .Ingredients ul li::before {
+  content: "•";
+  color: #854632;
+  padding-right: 16px;
+  padding-left: 8px;
+  font-size: 24px;
+}
+body .container .content .Instructions {
+  margin-bottom: 10px;
+}
+body .container .content .Instructions h2 {
+  margin-bottom: 10px;
+}
+body .container .content .Instructions ol {
+  margin-left: 25px;
+}
+body .container .content .Instructions ol li {
+  list-style: none;
+  padding-bottom: 8px;
+  color: #5f564d;
+  counter-increment: step-counter;
+  text-align: left;
+}
+body .container .content .Instructions ol li::before {
+  content: counter(step-counter) ".";
+  color: #854632;
+  font-weight: bold;
+}
+body .container .content .Nutrition {
+  margin-bottom: 35px;
+}
+body .container .content .Nutrition p {
+  margin: 15px 0px;
+  font-family: "Young Serif", serif;
+}
+body .container .content .Nutrition table {
+  width: 100%;
+}
+body .container .content .Nutrition table tr {
+  margin-bottom: 10px;
+}
+body .container .content .Nutrition table tr td {
+  border-bottom: 0.0625rem solid hsl(30, 18%, 87%);
+  padding: 10px 0px;
+}
+body .container .content .Nutrition table tr td strong {
+  color: hsl(332, 51%, 32%);
+}
+
+/*# sourceMappingURL=style.css.map */
